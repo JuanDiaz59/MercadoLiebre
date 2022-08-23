@@ -1,0 +1,398 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    background-color: #ebebeb;
+}
+
+.main-header {
+    background-color: #EAC926;
+    padding: 20px;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+footer {
+    text-align: center;
+    padding-top: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.main.header.top.bar {
+    width: 100%;
+}
+
+.logoMercadoLiebre {
+    width: 50%;
+    margin: auto;
+}
+
+.search.bar {
+    width: 50%;
+    display: inline;
+    text-align: center;
+}
+
+.button-search{
+    border: solid 0 white;
+    height: 20px;
+    width: 20px;
+    border-radius: 3px;
+    background-color: #EAC926;
+}
+
+.button-search:hover .fas.fa-search{
+    color: slategray;
+}
+
+input {
+    margin: auto;
+    width: 40%;
+    border-radius: 6px;
+    border: #ebebeb 0px solid;
+    font-size: medium;
+}
+
+.compra-en-cuotas {
+    text-align: center;
+}
+
+.nav.bar {
+    display: none;
+}
+
+.banner {
+    width: 100%;
+    margin: auto;
+}
+
+
+.Titulares {
+    font-size: 24px;
+}
+
+.Precios {
+    font-size: 18px;
+    width: 30%;
+}
+
+.Descuentos {
+    display: flex;
+    font-size: 18px;
+    color: #39b54a;
+    width: 70%;
+    justify-content: center;
+}
+
+.Descripciones {
+    font-size: 16px;
+    display: none;
+}
+
+.precio.y.descuento {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.camionverde {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+
+.burger-menu {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    width: 34px;
+    height: 28px;
+    background-color: #03264c;
+    margin: auto;
+    border-radius: 7px;
+}
+
+.fas.fa-credit-card {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #1259c3;
+}
+
+.footer-items:hover .fas.fa-credit-card{
+    color: #0022AA;
+    transition: 450ms;
+}
+
+.fas.fa-gift {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #1259c3;
+}
+
+.footer-items:hover .fas.fa-gift{
+    color: #0022AA;
+    transition: 450ms;
+}
+
+.fas.fa-user-shield {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #1259c3;
+}
+
+.footer-items:hover .fas.fa-user-shield{
+    color: #0022AA;
+    transition: 450ms;
+}
+
+.fas.fa-truck {
+    color: #39b54a;
+    border: solid 1px #39b54a;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: larger;
+}
+
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    margin-bottom: 10px;
+    width: 100%;
+
+}
+
+.product.img {
+    width: 100%;
+    margin: auto;
+    border-bottom: solid 1px #ebebeb;
+}
+
+.main.article {
+    padding: 15px;
+    background-color: white;
+}
+
+
+/* tablets*/
+@media(min-width: 361px) {
+
+    .product:hover .Descripciones{
+        display: block;
+    }
+
+    .product{
+        width: 48%;
+        margin: 2px;
+        margin-bottom: 30px;
+    }
+
+    .product:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .product.img {
+        box-shadow: none;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .nav.bar {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+    }
+
+    .nav.bar ul {
+        display: flex;
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        width: 50%;
+    }
+
+    .nav.bar li {
+        margin: 0 5px;
+        width: 40%;
+        text-align: center;
+    }
+
+    .nav.bar a {
+        text-decoration: none;
+        color: #222222;
+        display: inline-block;
+        padding: 5px 0;
+        font-size: 12px;
+    }
+
+    .compra-en-cuotas {
+        width: 33%;
+        font-size: 12px;
+        text-align: right;
+    }
+
+    .logoMercadoLiebre {
+        width: 33%;
+    }
+
+    input {
+        width: 85%;
+    }
+
+    .main.header.top.bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .Precios,
+    .Descuentos {
+        font-size: 14px;
+    }
+
+    .camionverde {
+        font-size: 10px;
+    }
+
+    .camionverde:hover .fas.fa-truck{
+        transform: rotate(-90deg);
+        transition: 750ms;
+    }
+}
+
+
+/*desktop*/
+@media(min-width: 769px) {
+
+    .product {
+        width: 24%;
+    }
+
+    .compra-en-cuotas {
+        font-size: 16px;
+    }
+
+    .camionverde {
+        font-size: 12px;
+    }
+
+    .nav.bar a {
+        font-size: 14px;
+    }
+
+    .main.header.top.bar,
+    .nav.bar,
+    .products,
+    .Titulares {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    footer{
+        display: flex;
+    }
+
+    .footer-items{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+/*&&&&&&&&&*/
+/* REGISTER STYLESHEET*/
+
+.formularios {
+    margin: auto;
+    max-width: 350px;
+}
+
+.formularios-crea-tu-cuenta{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-left: 35px;
+}
+
+.formulario {
+    display: block;
+    width: 80%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    height: 23px;
+}
+
+.formulario-titulo {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.formulario-titulo-fecha{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 35px;
+}
+
+.formulario-perfil {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-left: 35px;
+}
+
+.input-perfil {
+    width: auto;
+    margin-bottom: 5px;
+}
+
+.formulario-intereses {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 35px;
+}
+
+.input-intereses {
+    width: auto;
+    margin-bottom: 10px;
+
+}
+
+.formulario-file{
+    display: block;
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+:placeholder-shown{
+    font-size: 12px;
+}
+
+.formulario-button{
+    display: block;
+    background-color: #1259c3;
+    color: white;
+    margin-top: 10px;
+    width: 80%;
+    font-size: 16px;
+}
+
+.formulario-button:hover{
+    background-color: #0022AA;
+    transition: 450ms;
+}
