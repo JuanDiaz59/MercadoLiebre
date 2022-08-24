@@ -5,7 +5,8 @@ app.use(express.static('Public'));
 
 
 
-app.listen(process.env.PORT || 5001, () => console.log('EL servidor esta corriendo en el puerto 5001'));
+app.listen( process.env.PORT || 3030, function(){ 
+    console.log('EL servidor esta corriendo en el puerto 5001')});
 
 app.get('/', (req, res) => {
     res.sendFile(path.resolve(__dirname, './Views/home.html'))
